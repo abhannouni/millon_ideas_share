@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.card {
+  width: auto;
+  border-radius: 20px;
+  background: #191a1d;
+  overflow: hidden;
+  padding: 14px;
+  position: relative;
+  margin: 25px;
+}
+.left-side .card {
+  position: fixed;
+  width: 300px;
+}
+@media (max-width: 1400px) {
+  .left-side .card {
+    position: fixed;
+    width: 270px;
+  }
+}
+@media (max-width: 1200px) {
+  .left-side .card {
+    display: none;
+  }
+}
+
+.posts .card header.user {
+  display: flex;
+  gap: 12px;
+}
+.posts .card header.user img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.posts .card header .user-info-name {
+  letter-spacing: 0.4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+}
+.posts .card header .user-info-time {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.588);
+}
+.posts .card main p {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 16px;
+  line-height: 1.7;
+}
+.posts .card section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.posts .card section .users-avatars {
+  margin-right: 21px;
+  display: flex;
+  align-items: center;
+}
+.posts .card section .users-avatars img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #191a1d;
+  margin-right: -15px;
+}
+.posts .card section p {
+  color: rgba(255, 255, 255, 0.508);
+  font-size: 12px;
+  margin-left: 10px;
+}
+.posts .card section p.comment {
+  margin-left: auto;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  height: 40px;
+  width: 90%;
+  padding: 12.5px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 2px 5px rgba(15, 15, 51, 0.4);
+  /* font-size: 25px; */
+  color: rgba(15, 15, 51, 0.8);
+  background-color: #e5e5e5;
+  transition: 0.4s;
+}
+
+input[type="submit"] {
+  border-radius: 20px;
+}
+
+.avatar {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* input:hover, :focus {
+    width: 375px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(15, 15, 51, 0.4);
+  } */
+
+input[type="text"]:not(:placeholder-shown) {
+  margin-bottom: 10px;
+  border-bottom: 6px solid #4b4a4a;
+  height: 50px;
+}
+
+hr {
+  color: #fff;
+}
+
+/* tweet box */
+.tweetbox__input img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.tweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid var(--twitter-background);
+  padding-right: 10px;
+}
+
+.tweetBox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.tweetbox__input {
+  display: flex;
+  padding: 20px;
+}
+
+.tweetbox__input input {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  
+}
+.tweetbox__input input[text]{
+  background-color: #191a1d;
+}
+
+.tweetBox__tweetButton {
+  background-color: #50b7f5;
+  border: none;
+  color: white;
+  font-weight: 900;
+  border-radius: 30px;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
+/* post */
+.post__avatar img {
+  border-radius: 50%;
+  height: 40px;
+}
+
+.post {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid var(--twitter-background);
+  padding-bottom: 10px;
+}
+
+.post__body img {
+  width: 450px;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.post__badge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+  margin-right: 5px;
+}
+
+.post__headerSpecial {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
+}
+
+.post__headerText h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.post__headerDescription {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.post__body {
+  flex: 1;
+  padding: 10px;
+}
+
+.post__avatar {
+  padding: 20px;
+}
